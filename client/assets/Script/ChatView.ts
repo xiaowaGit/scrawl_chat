@@ -276,6 +276,7 @@ export default class ChatView extends cc.Component {
         let cmd = {opt:"chat",info:info};
         this.chat_model.send(cmd);
         this.add_info(cmd,true);
+        this.edit_info.string = "";
     }
 
     onCleanClicked() {
